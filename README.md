@@ -2,15 +2,21 @@
     <img alt="Launchbase" src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/logo.png" width="200px" />
 </h1>
 <h3 align="center">
-  Desafios Módulo 2 - Construindo foodfy
+  Desafios Módulo 3 - Refatorando foodfy
 </h3>
+
+  - [x] Implementar back-end com Node.JS
+
+  - [x] Refatorar páginas com Nunjucks
+  
+  - [x] Página de receitas com opção de 'mostrar/esconder' 
 
 
 [Desafios anteriores](https://github.com/luizfdos/launchbase_desafios02)
 
  
 <p align="center">
-   <img src="./assets/chef.png" width="200"/>
+   <img src="./public/assets/chef.png" width="200"/>
 </p>
 
 # Foodfy
@@ -29,12 +35,26 @@
 <p align="center"><img src="./github/recipes.gif?raw=true"/></p>
 
 
-## :construction_worker: Como usar 
-- Faça uma cópia deste respositório
-```
- $ git clone https://github.com/luizfdos/foodfy.git
-```
-  - Abra o arquivo index.html
+## :construction_worker: Como usar
+
+- Necessário NodeJS
+
+- Faça uma cópia deste respositório:
+  ```
+  $ git clone https://github.com/luizfdos/foodfy.git
+  ```
+- Instale as dependências:
+  ```
+  npm install
+  ```
+- Inicie o servidor:
+  ```
+  npm start 
+  ```
+- Acesse pelo navegador o caminho:
+  ```
+  http://127.0.0.1:5000/
+  ```
 
 
 
@@ -43,3 +63,6 @@
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
 
 Feito com :purple_heart: por [Luiz Fernando](https://luizfdos.github.io) 🚀
+
+
+
