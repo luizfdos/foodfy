@@ -1,0 +1,19 @@
+{
+  "name": "foodfy",
+  "version": "1.5.0",
+  "description": "<h1 align=\"center\">\r     <img alt=\"Launchbase\" src=\"https://storage.googleapis.com/golden-wind/bootcamp-launchbase/logo.png\" width=\"200px\" />\r </h1>\r <h3 align=\"center\">\r   Desafios Módulo 2 - Construindo foodfy\r </h3>",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "LuizFDOS",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
