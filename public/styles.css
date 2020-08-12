@@ -112,6 +112,7 @@ main .content .recipe-cards {
 .card {
     margin-top: 20px;
     cursor: pointer;
+    transition: 300ms;
 }
 
 .card:hover {
