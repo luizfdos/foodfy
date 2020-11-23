@@ -1,0 +1,66 @@
+{% extends "layout.njk" %}
+{% block header %}
+  <header id="admin">
+    <div>
+      <a href="/admin/recipes"><img src="/../assets/logowhite.png" alt="Foodfy logo"></a>
+    </div>
+  </header>
+{% endblock %}
+{% block content %}
+  <main>
+    <form method="post" class="edit-create" action="/admin/recipes?_method=PUT">
+      <div class='form-title'>
+        <h2>Editando receita</h2>
+        <div class="buttons">
+          <button class="save" type="submit">Salvar receita</button>
+        </div>
+      </div>
+
+      <div class="title">Imagem da receita</div>
+      <input type="url" name="image" value="{{recipe.image}}">
+      <div class="title">Título da receita</div>
+      <input type="text" name="title" value="{{recipe.title}}">
+      <div class="title">Autor</div>
+      <input type="text" name="author" value="{{recipe.author}}">
+      <div class="title">Ingredientes</div>
+      <div id="ingredients">
+        {% for ingredient in recipe.ingredients %}
+          <div class="ingredient">
+            <input type="text" name="ingredients[]" value="{{ ingredient }}">
+          </div>
+        {% endfor %}
+      </div>
+      <button type="button" class="add-item" onClick="addItem('#ingredients', '.ingredient')">Adicionar novo ingrediente</button>
+
+      <div class="title">Modo de preparo</div>
+      <div id="preparation-steps">
+          {% for step in recipe.preparation %}
+          <div class="preparation-step">
+            <input type="text" name="preparation[]" value="{{ step }}">
+          </div>
+          {% endfor %}
+      </div>
+      <button type="button" class="add-item" onClick="addItem('#preparation-steps', '.preparation-step')">Adicionar novo passo</button>
+      <div class="title">Informações adicionais</div>
+      <textarea name="information" class="information">{{recipe.information}}</textarea>
+      <input type="hidden" name="index" value="{{recipe.index}}">
+
+  </form>
+
+  <form method="post" action="/admin/recipes?_method=DELETE" id="form-delete">
+    <input type="hidden" name="index" value="{{recipe.index}}">
+    <button class="delete" type="submit">Deletar</button>
+  </form>
+  <script>
+    const formDelete = document.querySelector('#form-delete')
+    formDelete.addEventListener("submit", function(event){
+      confirmation = confirm("Deseja realmente deletar a receita?")
+      if(!confirmation) {
+        event.preventDefault()
+      }
+    })
+  </script>
+</main>
+<script src="/../../../add.js"></script>
+{% endblock content %}
+{% block footer %}{% endblock %}

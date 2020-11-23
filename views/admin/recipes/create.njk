@@ -1,0 +1,48 @@
+{% extends "layout.njk" %}
+{% block header %}
+    <header id="admin">
+      <div>
+      <a href="/admin/recipes"><img src="/../assets/logowhite.png" alt="Foodfy logo"></a>
+      </div>
+    </header>
+{% endblock %}
+{% block content %}
+<main>
+
+<form action="/admin/recipes" method="post" class="edit-create">
+  <div class='form-title'>
+    <h2>Criando receita</h2>
+    <div class="buttons">
+      <button class="save" type="submit">Salvar receita</button>
+    </div>
+  </div>
+  
+  <div class="title">Imagem da receita</div>
+  <input type="url" name="image" value="{{recipe.image}}" placeholder="http://...">
+  <div class="title">Título da receita</div>
+  <input type="text" name="title" value="" placeholder="Nome da receita"">
+  <div class="title" class="title">Ingredientes</div>
+  <div id="ingredients">
+      <div class="ingredient">
+        <input type="text" name="ingredients[]" value="" placeholder="Ingrediente">
+      </div>
+  </div>
+  <button type="button" class="add-item" onClick="addItem('#ingredients', '.ingredient')">Adicionar novo ingrediente</button>
+
+  <div class="title" class="title">Modo de preparo</div>
+  <div id="preparation-steps">
+    <div class="preparation-step">
+      <input type="text" name="preparation[]">
+    </div>
+  </div>
+  <button type="button" class="add-item" onClick="addItem('#preparation-steps', '.preparation-step')">Adicionar novo passo</button>
+  
+  <div class="title">Informações adicionais</div>
+  <textarea name="information" class="information">{{recipe.information}}</textarea>
+  
+</form>
+
+</main>
+<script src="/../../../add.js"></script>
+{% endblock content %}
+{% block footer %}{% endblock %}

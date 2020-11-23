@@ -24,7 +24,8 @@ body {
 
 }
 
-header {
+header, 
+header#admin div{
     display: flex;
     font-size: 16px;
     font-weight: 500;
@@ -32,6 +33,18 @@ header {
     width: 100%;
     max-width: 940px;
     margin: 30px auto 0;
+}
+
+header#admin div {
+ margin: 30px auto;
+}
+
+header#admin {
+    height: 80px;
+    background-color: #111111;
+    margin-top: 0;
+    width: 100vw;
+    max-width: 100vw;
 }
 
 .menu {
@@ -88,6 +101,7 @@ body main {
     width: 100%;
     max-width: 940px;
     margin: 0px auto;
+    position: relative;
 }
 
 body main.not-found {
@@ -124,6 +138,7 @@ main .content .recipe-cards {
     width: 300px;
     height: 140px;
 
+    object-fit: cover;
     border-radius: 15px;
 }
 
@@ -183,11 +198,14 @@ main.recipes {
     margin-top: 50px;
 }
 
+
 .recipe-image img {
     width: 940px;
     height: 280px;
     border-radius: 15px;
     margin-bottom: 50px;
+    object-fit: cover;
+
 }
 
 .recipe-content {
@@ -252,4 +270,141 @@ main.recipes {
 .preparation.hide li,
 .information.hide p{
     display: none;
+}
+
+/* == ADMIN == */
+
+.admin {
+    margin-top: 50px;
+}
+
+main .admin .recipe-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.admin .card {
+    display: flex;
+    cursor: initial;
+}
+
+.admin .card .card-image img {
+    width: 172px;
+    height: 80px;
+    margin-right: 20px;
+}
+.admin p.title {
+    font-size: 18px;
+}
+
+.admin p.author {
+    margin-bottom: 10px;
+}
+
+.admin .card .card-content {
+    margin-top: 0;
+}
+
+.admin .card .card-content a {
+    color: #6558C3;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.admin .card:hover {
+    transform: translateY(0px);
+    filter: brightness(100%);
+}
+
+main.recipes-admin {
+    margin-top: 55px;
+}
+
+main.recipes-admin h2 {
+    display: inline;
+}
+
+main.recipes-admin a {
+    background-color: #6558C3;
+    float: right;
+    padding: 9px 20px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    line-height: 19px;
+    font-weight: bold;
+}
+
+form.edit-create {
+    display: flex;
+    flex-direction: column;
+}
+
+form.edit-create button.add-item {
+    color: #6558C3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-top: 15px;
+    text-align: left;
+    width: 200px;
+}
+
+input, textarea {
+    margin-top: 10px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+}
+
+textarea.information {
+    height: 257px;
+    margin-bottom: 60px;
+    resize: none;
+}
+
+.form-title {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.title {
+    margin-top: 30px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 16px;
+    color: #111111;
+}
+
+.form-title button.create,
+.form-title button.save,
+button.delete {
+    padding: 9px 20px;
+    font-weight: bold;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.delete {
+    background: #DC4747;
+}
+
+.form-title button.save {
+    background: #6558C3;
+}
+
+form#form-delete {
+    position: absolute;
+    top: 50px;
+    right: 149px;
 }

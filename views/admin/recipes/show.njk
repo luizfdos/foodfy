@@ -1,0 +1,63 @@
+{% extends "layout.njk" %}
+{% block header %}
+    <header id="admin">
+      <div>
+      <a href="/admin/recipes"><img src="/../assets/logowhite.png" alt="Foodfy logo"></a>
+      </div>
+    </header>
+{% endblock %}
+
+{% block content %}
+<main>
+ <main class="recipes-admin">
+   <h2>Receita: {{recipe.title}}</h2>
+   <a href="/admin/recipes/{{recipe.index}}/edit">Editar receita</a>
+  <div id="recipe">
+      <div class="recipe-image">
+          <img src="{{recipe.image}}" alt="">
+      </div>
+
+      <div class="recipe-content">
+          <h1>{{recipe.title}}</h1>
+          <p class="author">por {{recipe.author}}</p>
+      </div>
+
+      <div class="ingredients">
+          <div class="title">
+              <h2>Ingredientes</h2>
+          </div>
+          <ul>
+              {% for ingredient in recipe.ingredients %}
+              <li>{{ingredient}}</li>
+              {% endfor %}
+          </ul>
+
+      </div>
+      
+      <div class="preparation">
+
+          <div class="title">
+              <h2>Modo de preparo</h2>
+          </div>
+          
+          <ul>
+              {% for preparationstep in recipe.preparation %}
+              <li>{{preparationstep}}</li>
+              {% endfor %}
+          </ul>
+          
+      </div>
+  {% if recipe.information != '' %}
+      <div class="information">
+          <div class="title">
+              <h2>Informações adicionais</h2>
+          </div>
+              <p>{{recipe.information.replace('\n', '<br><br>')}}</p>
+      </div>
+      
+  </div>
+  {%endif%}
+</main>
+</main>
+{% endblock content %}
+{% block footer %}{% endblock %}
