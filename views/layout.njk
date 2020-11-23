@@ -6,9 +6,10 @@
         {% block head %}
         <title>Foodfy</title>
         {% endblock %}
-        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="/../styles.css">
     </head>
     <body>
+    {% block header %}
         <header>
             <a href="/"><img src="../assets/logo.png" alt="Foodfy logo"></a>
             <nav class="menu">
@@ -16,11 +17,13 @@
                 <a href="/recipes">Receitas</a>
             </nav>
         </header>
+    {% endblock %}
 
         {% block content %}{% endblock %}
-
+    {% block footer %}
         <footer>
             <p>Todos os direitos reservados, receitas Foodfy</p>
         </footer>
+    {% endblock %}
     </body>
 </html>
