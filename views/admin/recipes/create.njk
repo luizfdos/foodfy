@@ -18,13 +18,15 @@
   </div>
   
   <div class="title">Imagem da receita</div>
-  <input type="url" name="image" value="{{recipe.image}}" placeholder="http://...">
+  <input required type="url" name="image" value="{{recipe.image}}" placeholder="http://...">
   <div class="title">Título da receita</div>
-  <input type="text" name="title" value="" placeholder="Nome da receita"">
+  <input required type="text" name="title" value="" placeholder="Nome da receita"">
+  <div class="title">Autor da receita</div>
+  <input required type="text" name="author" value="" placeholder="Nome do autor">
   <div class="title" class="title">Ingredientes</div>
   <div id="ingredients">
       <div class="ingredient">
-        <input type="text" name="ingredients[]" value="" placeholder="Ingrediente">
+        <input required type="text" name="ingredients[]" value="" placeholder="Ingrediente">
       </div>
   </div>
   <button type="button" class="add-item" onClick="addItem('#ingredients', '.ingredient')">Adicionar novo ingrediente</button>
@@ -32,7 +34,7 @@
   <div class="title" class="title">Modo de preparo</div>
   <div id="preparation-steps">
     <div class="preparation-step">
-      <input type="text" name="preparation[]">
+      <input required type="text" name="preparation[]">
     </div>
   </div>
   <button type="button" class="add-item" onClick="addItem('#preparation-steps', '.preparation-step')">Adicionar novo passo</button>
