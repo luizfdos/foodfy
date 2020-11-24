@@ -25,6 +25,7 @@
       "information": "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! \r\n\r\n Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açogueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijom tomates e alface."
     },
     {
+      "index": 1,
       "image": "https://dm2301files.storage.live.com/y4pf3xpjlpQE7Y5-J12MPqgYAtsB5IDtxg_Psm48xB_-bxq49_z5kxMWozl2Y_tu4usAdK_5FSpcwv7wYfYx3mXg6GGMhS6WljhyUZ_b1_YaiZzt5bq9U3vytZaQmX2lggN3jGQe6z6Xa3Iu5JfCphHwcsgY1pCWb16n7An4hZJnZd7h-K-UpI0FMLtLlxxLW8fdqAOcdo9eVu3L8gYCOHxeY0GxOW3697QllLPsCPU6HY/pizza.png?psid=1&width=600&height=280",
       "title": "Pizza 4 estações",
       "ingredients": [
@@ -49,10 +50,10 @@
         "Leve novamente ao forno até derreter a mussarela."
       ],
       "information": "Pizza de liquidificador é uma receita deliciosa e supersimples de preparar. Feita toda no liquidificador, ela é bem prática para o dia a dia. Aqui no TudoGostoso você também encontra diversas delícias práticas feitas no liquidificador: massa de panqueca, torta de frango de liquidificador, pão de queijo de liquidificador, bolo de banana, bolo de chocolate e muito mais!",
-      "author": "Fabiana Melo",
-      "index": 1
+      "author": "Fabiana Melo"
     },
     {
+      "index": 2,
       "image": "https://dm2301files.storage.live.com/y4pbrFZnI5hdjjbPX46_vMlCayylKi5YuoAQStliJ67FNJK58wRCy06ymfdfbg5YsayWKjEfMxckewXim5OOIF-qAvf8OHakaoV041xJHp-RYEjabigUbzm-Gbcha1_n_PpSscaEZgZo95Lkv4z5rIjgsW_64TUyY7I120kyMcYjQlI2-gxU6LZtkNCXvMnhEkN915vSJJmNcerFdYZCMyVhVsoLJx2XkIWkm0MIPc6roY/asinhas.png?psid=1&width=600&height=280",
       "title": "Asinhas de frango ao barbecue",
       "ingredients": [
@@ -67,10 +68,10 @@
         "Para servir fica bonito com salada, ou abuse da criatividade."
       ],
       "information": "",
-      "author": "Vania Steroski",
-      "index": 2
+      "author": "Vania Steroski"
     },
     {
+      "index": 3,
       "image": "https://dm2301files.storage.live.com/y4pQmnqWGy2RmGlmRGyWZ1nJZd7qjXZyVvaR-P4Mps1YSdMPArn7YAHhvcqpcW3k3Yg1254gxH8cv6I1pNV7x6co2BgcN_wl6sFSk0xVDV2n0N7ijFXrjRFkpT0M0j6eJ0Or_nNVUeBRafMWGe9LZR7BmEWKcscpK41ZEopO1zat7zmk0yPBH9pUewFVnlzaPELjt9J5hc0H-idxBkWjWg_WXc5huI48XIdDZ0OZ8YDZuc/lasanha.png?psid=1&width=600&height=280",
       "title": "Lasanha mac n' cheese",
       "author": "Juliano Vieira",
@@ -88,10 +89,10 @@
         "Tempere com sal, pimenta e noz-moscada a gosto.",
         "Desligue o fogo e acrescente o creme de leite; misture bem e reserve."
       ],
-      "information": "Recheie a lasanha com o que preferir.",
-      "index": 3
+      "information": "Recheie a lasanha com o que preferir."
     },
     {
+      "index": 4,
       "image": "https://dm2301files.storage.live.com/y4pJ6zKhnLFcQkUnAdyRffbXm_4lHRaaf9IMKlBcOExcKlaLgeBVzGz3bZXceWBLmSr8FBB8rsESbrYGynUft7n1MetMCrH-7Z0gyXxGmSQO6doIbwsfNK2fQ7sQab89GTBhz5C81wLqtRuw4lqkO2KfpAPmQFhDVEa05c99wH_Xgh2rTM38sPzbG79aDJasvTNfjgFgE0c-GUEiZATPu2BGYOb_p33G5jyOrMybTTuvm4/espaguete.png?psid=1&width=600&height=280",
       "title": "Espaguete ao alho",
       "author": "Júlia Kinoto",
@@ -113,10 +114,10 @@
         "O dente de alho, serve para você untar os pratos onde serão servidos o macarrão.",
         "Coloque as porções nos pratos já com o cheiro do alho, e enfeite com algumas ervas."
       ],
-      "information": "Não lave o macarrão nem passe óleo ou gordura nele depois de escorrê-lo. Coloque direto na frigideira.",
-      "index": 4
+      "information": "Não lave o macarrão nem passe óleo ou gordura nele depois de escorrê-lo. Coloque direto na frigideira."
     },
     {
+      "index": 5,
       "image": "https://dm2301files.storage.live.com/y4pfxSVvuWJYzcKyEZ15ADPyHyjMHQdezWhl8Vc5V1ovZ21qfzwF__Kk6rjRaY0ldlwroY7N4PnfGdtVRamunZYWixKsdZNUNFaSgL5OBFaM4bzfi-P8G-tB_idjcC4QXQPGp_BmOPLT-ROPzfdOzd38xirL8HzxydmNsSqf2mcq0JNWNBB3jPZMVyx_6iMjpoZd8kG5lDOKE746Shkl3l5BYp5GOf4yrn9bUCjvxcydIs/doce.png?psid=1&width=600&height=280",
       "title": "Docinhos pão-do-céu",
       "author": "Ricardo Golvea",
@@ -136,8 +137,7 @@
         "Despeje em assadeira retangular média, untada e leve ao forno médio (180°C), por aproximadamente 45 minutos. Depois de frio, polvilhe, com o",
         "açúcar de confeiteiro e corte em quadrados."
       ],
-      "information": "",
-      "index": 5
+      "information": ""
     }
   ]
 }
