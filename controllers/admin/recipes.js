@@ -10,18 +10,25 @@ exports.create = function (req, res) {
 };
 
 exports.post = function (req, res) {
-  const recipe = ({
+  const {
     image,
     title,
+    author,
     ingredients,
     preparation,
     information,
-  } = req.body);
+  } = req.body;
+
+  const index = Number(data.recipes.length);
 
   data.recipes.push({
-    ...recipe,
-    author: "",
-    index: Number(data.recipes.length),
+    index,
+    image,
+    title,
+    author,
+    ingredients,
+    preparation,
+    information,
   });
 
   fs.writeFile("data.json", JSON.stringify(data, null, 2), function (err) {
