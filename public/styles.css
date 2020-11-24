@@ -383,7 +383,7 @@ div.title {
     color: #111111;
 }
 
-.form-title button.create,
+a.create,
 .form-title button.save,
 button.delete {
     padding: 9px 20px;
@@ -394,12 +394,18 @@ button.delete {
     border-radius: 4px;
     cursor: pointer;
 }
+a.create {
+    position: absolute;
+    top: 15px; 
+    right: 0px;
+}
 
 button.delete {
     background: #DC4747;
 }
 
-.form-title button.save {
+.form-title button.save,
+a.create {
     background: #6558C3;
 }
 
