@@ -25,17 +25,17 @@
 
 - Necessário NodeJS
 
-- Faça uma cópia deste respositório:
+- Clonar este respositório:
   ```
   $ git clone https://github.com/luizfdos/foodfy.git
   ```
 - Instale as dependências:
   ```
-  npm install
+  $ npm install
   ```
 - Inicie o servidor:
   ```
-  npm start 
+  $ npm start 
   ```
 - Acesse pelo navegador o caminho:
   ```
